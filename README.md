@@ -1,30 +1,30 @@
-# Formula 1 Predictor
+Predict Formula 1 race outcomes using machine learning models trained on historical race data, driver stats, qualifying results, and circuit information.
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+Features
+Collects and processes F1 data from the Ergast API and other sources
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/ishayat17s-projects/v0-formula-1-predictor)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/0S19gjFll85)
+Uses multiple ML models (Random Forest, SVM, Logistic Regression, etc.) to predict race results
 
-## Overview
+Provides a simple web interface to input race details and get predictions
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+Includes exploratory data analysis and model evaluation with cross-validation
 
-## Deployment
+Technologies
+Python, Flask (backend)
 
-Your project is live at:
+scikit-learn, pandas, numpy (ML & data processing)
 
-**[https://vercel.com/ishayat17s-projects/v0-formula-1-predictor](https://vercel.com/ishayat17s-projects/v0-formula-1-predictor)**
+Next.js, React, TailwindCSS (frontend)
 
-## Build your app
+Getting Started
+Clone the repo
 
-Continue building your app on:
+Install dependencies with pip install -r requirements.txt
 
-**[https://v0.dev/chat/projects/0S19gjFll85](https://v0.dev/chat/projects/0S19gjFll85)**
+Run the Flask API and frontend app
 
-## How It Works
+Use the UI to explore race predictions
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+Author
+Ishayat Arik Chowdhury – passionate about AI and F1 analytics
+Portfolio | Email
