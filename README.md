@@ -25,6 +25,4 @@ Run the Flask API and frontend app
 
 Use the UI to explore race predictions
 
-Author
-Ishayat Arik Chowdhury – passionate about AI and F1 analytics
-Portfolio | Email
+
