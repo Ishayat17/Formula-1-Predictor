@@ -1,7 +1,7 @@
 Predict Formula 1 race outcomes using machine learning models trained on historical race data, driver stats, qualifying results, and circuit information.
 
 Features
-Collects and processes F1 data from the Ergast API and other sources
+Collects and processes F1 data from historic database and other sources
 
 Uses multiple ML models (Random Forest, SVM, Logistic Regression, etc.) to predict race results
 
