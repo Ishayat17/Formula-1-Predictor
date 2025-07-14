@@ -11,11 +11,13 @@ predictor.load_improved_models()
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.json or {}
-    race = data.get('race', 'Monaco Grand Prix')
-    year = data.get('year', 2024)
+    race = data.get('race')
+    year = data.get('year')
     temperature = data.get('temperature', 25)
     humidity = data.get('humidity', 60)
     rain_probability = data.get('rain_probability', 0.2)
+    if not race or not year:
+        return jsonify({'success': False, 'error': 'Race and year are required'}), 400
     race_conditions = {
         'race': race,
         'year': year,
@@ -28,7 +30,6 @@ def predict():
 
 @app.route('/predict-all', methods=['POST'])
 def predict_all():
-    # Optionally accept year in request, default to latest year in races.csv
     data = request.json or {}
     year = data.get('year')
     races_df = pd.read_csv('data/races.csv')
