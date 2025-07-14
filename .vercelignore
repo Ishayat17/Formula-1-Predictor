@@ -55,5 +55,4 @@ Thumbs.db
 
 # Large model files (will be generated during build)
 *.pkl
-*.npy
-*.json 
+*.npy 
