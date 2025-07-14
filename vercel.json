@@ -1,0 +1,21 @@
+{
+  "functions": {
+    "app/api/ml-predict/route.ts": {
+      "runtime": "nodejs18.x"
+    },
+    "app/api/data/route.ts": {
+      "runtime": "nodejs18.x"
+    },
+    "app/api/f1-schedule/route.ts": {
+      "runtime": "nodejs18.x"
+    }
+  },
+  "buildCommand": "npm run build",
+  "outputDirectory": ".next",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "regions": ["iad1"],
+  "env": {
+    "PYTHON_VERSION": "3.9"
+  }
+} 

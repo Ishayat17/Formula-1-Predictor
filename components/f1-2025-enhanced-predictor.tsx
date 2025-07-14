@@ -111,9 +111,9 @@ export default function F12025EnhancedPredictor() {
     setError("")
 
     try {
-      console.log("🤖 Calling ML prediction API...")
+      console.log("🤖 Calling real ML prediction API...")
 
-      const response = await fetch("/api/f1-2025-predict", {
+      const response = await fetch("/api/ml-predict", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -139,7 +139,7 @@ export default function F12025EnhancedPredictor() {
         setPredictions(data.predictions)
         setInsights(data.insights)
         setModelInfo(data.modelInfo)
-        console.log("✅ ML predictions received:", data.predictions.slice(0, 3))
+        console.log("✅ Real ML predictions received:", data.predictions.slice(0, 3))
       } else {
         throw new Error("Prediction failed")
       }

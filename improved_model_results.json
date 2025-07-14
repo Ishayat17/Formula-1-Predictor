@@ -1,0 +1,110 @@
+{
+  "random_forest": {
+    "mae": 0.036987852015461085,
+    "mse": 0.036800855880728886,
+    "rmse": 0.19183549171289677,
+    "r2": 0.9993598294031171,
+    "cv_mae": 0.047256680657485076,
+    "cv_std": 0.003726943528505448,
+    "position_accuracy_1": 99.30977360574268,
+    "position_accuracy_2": 99.77912755383765,
+    "position_accuracy_3": 99.9723909442297,
+    "podium_accuracy": 99.72390944229707,
+    "top5_accuracy": 99.6134732192159,
+    "top10_accuracy": 99.53064605190502,
+    "direction_accuracy": 99.53064605190502,
+    "best_params": {
+      "max_depth": 20,
+      "min_samples_leaf": 1,
+      "min_samples_split": 2,
+      "n_estimators": 200
+    },
+    "feature_importance": {
+      "grid": 0.4018176161215041,
+      "year_normalized": 5.750141406302453e-05,
+      "round_normalized": 2.1491361529571205e-05,
+      "lat": 2.8088285116798453e-05,
+      "lng": 3.2263986334667735e-05,
+      "alt": 3.306050071658993e-05,
+      "driver_avg_position_5races": 5.4602196147738185e-05,
+      "driver_avg_position_10races": 8.499571223201669e-05,
+      "driver_recent_form": 0.00010235670684633235,
+      "driver_circuit_avg": 5.280615928043654e-05,
+      "constructor_avg_position_5races": 0.00014787558350225265,
+      "constructor_avg_points_5races": 6.302994173264795e-05,
+      "circuit_difficulty": 3.6732237341333605e-05,
+      "season_race_number": 2.268831873597023e-05,
+      "season_points_so_far": 5.902979782964732e-05,
+      "grid_advantage": 0.5971559277557444,
+      "driverId_encoded": 0.00011336715577978569,
+      "constructorId_encoded": 8.47970410452209e-05,
+      "circuitId_encoded": 3.1769724517444324e-05
+    }
+  },
+  "xgboost": {
+    "mae": 0.021158997084806536,
+    "mse": 0.03134991587557618,
+    "rmse": 0.1770590745360886,
+    "r2": 0.9994546514237782,
+    "cv_mae": 0.3482200130671207,
+    "cv_std": 0.004178853524829374,
+    "position_accuracy_1": 99.69630038652679,
+    "position_accuracy_2": 99.80673660960795,
+    "position_accuracy_3": 99.9723909442297,
+    "podium_accuracy": 96.79734953064604,
+    "top5_accuracy": 97.10104914411927,
+    "top10_accuracy": 98.15019326339039,
+    "direction_accuracy": 98.15019326339039,
+    "best_params": {
+      "learning_rate": 0.05,
+      "max_depth": 8,
+      "n_estimators": 300,
+      "subsample": 1.0
+    },
+    "feature_importance": {
+      "grid": 0.40080712142724295,
+      "year_normalized": 7.996679285382214e-06,
+      "round_normalized": 4.14162494545634e-06,
+      "lat": 3.0071293550025164e-06,
+      "lng": 3.897523705917857e-06,
+      "alt": 5.7823050047539386e-06,
+      "driver_avg_position_5races": 6.6441374696906215e-06,
+      "driver_avg_position_10races": 1.14956168429355e-05,
+      "driver_recent_form": 4.503034102706905e-05,
+      "driver_circuit_avg": 9.911558311386124e-06,
+      "constructor_avg_position_5races": 0.0001110741950490656,
+      "constructor_avg_points_5races": 5.828350575259887e-05,
+      "circuit_difficulty": 8.94960571223379e-06,
+      "season_race_number": 3.145159792865259e-06,
+      "season_points_so_far": 1.4230354087145634e-05,
+      "grid_advantage": 0.5987981660406739,
+      "driverId_encoded": 3.926376731125192e-05,
+      "constructorId_encoded": 6.027824246347732e-05,
+      "circuitId_encoded": 1.58078596687204e-06
+    }
+  },
+  "neural_network": {
+    "mae": 0.14270845577858143,
+    "mse": 0.027816831782171425,
+    "rmse": 0.16678378752795917,
+    "r2": 0.9995161113137396,
+    "cv_mae": 0.04974011420773579,
+    "cv_std": 0.0027825965487172115,
+    "position_accuracy_1": 100.0,
+    "position_accuracy_2": 100.0,
+    "position_accuracy_3": 100.0,
+    "podium_accuracy": 96.82495858641634,
+    "top5_accuracy": 96.76974047487576,
+    "top10_accuracy": 96.93539480949751,
+    "direction_accuracy": 96.93539480949751,
+    "best_params": {
+      "alpha": 0.01,
+      "hidden_layer_sizes": [
+        150,
+        75
+      ],
+      "learning_rate_init": 0.1
+    },
+    "feature_importance": null
+  }
+}
